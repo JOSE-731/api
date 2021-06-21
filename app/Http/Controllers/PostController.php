@@ -9,9 +9,8 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function index(){
-        $post = Post::latest()->paginate(20);
-        $user = User::get();
-        
-        return view('index',[ 'post' =>$post], [ 'user' =>$user] );
+        $post = Post::latest()->paginate(10);
+    
+        return view('index',[ 'post' =>$post]);
     }
 }
