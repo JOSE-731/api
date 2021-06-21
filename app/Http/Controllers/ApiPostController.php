@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use  App\Http\Resources\ApiResource;
 use App\Post;
 use Illuminate\Http\Request;
 
@@ -36,7 +36,8 @@ class ApiPostController extends Controller
      */
     public function show(Post $post)
     {
-        return $post;
+        //Le pasamos la data que se le asignará un formato
+        return new ApiResource($post);
     }
     /**
      * Update the specified resource in storage.
