@@ -22,7 +22,7 @@
                     <div class="card-body">
                       <blockquote class="blockquote mb-0">
                         <p>{{$posts->tittle  }}</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        <footer class="blockquote-footer">Usuario : {{ $posts->user_id }}<cite title="Source Title"></cite></footer>
                       </blockquote>
                     </div>
                   </div>
@@ -31,12 +31,6 @@
           </div>
       </div>
 
-      
-        {{-- @foreach($post as $posts)
-            <div>
-                <h3>{{ $posts->tittle }}<h3>
-            </div>
-       @endforeach --}}
        {{ $post->links() }}
 
     
