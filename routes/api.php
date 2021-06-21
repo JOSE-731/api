@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 //Agreganos las rutas de la api
 
 //Muestra solo la ruta show
-Route::apiResource('v1/posts', 'ApiPostController')->only('show');
+Route::apiResource('v1/posts', 'ApiPostController')->only(['show', 'index']);
 
 //Mustra toda las rutas
 //Route::apiResource('v1/posts', 'PostController');

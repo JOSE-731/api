@@ -14,7 +14,8 @@ class ApiPostController extends Controller
      */
     public function index()
     {
-        //
+        //La clase Collection permite convertir cualquier array en un objeto de colección de datos.
+        return ApiResource::collection(Post::latest()->paginate());
     }
 
     /**
