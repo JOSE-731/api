@@ -60,6 +60,13 @@ class ApiPostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+
+        //Para eliminar 
+        $post->delete();
+
+        return response()->json([
+            'menssage' => 'success'
+        ], 204);
+
     }
 }
