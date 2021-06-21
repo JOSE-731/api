@@ -13,5 +13,7 @@
         </div>
     @endforeach
     {{ $post->links() }}
+
+    {{ $user }}
 </body>
 </html>
