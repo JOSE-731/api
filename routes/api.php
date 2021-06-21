@@ -17,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//Agreganos las rutas de la api
+
+//Muestra solo la ruta show
+Route::apiResource('v1/posts', 'PostController')->only('show');
+
+//Mustra toda las rutas
+Route::apiResource('v1/posts', 'PostController');
