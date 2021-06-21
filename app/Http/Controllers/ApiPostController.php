@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Api\V1;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use App\Post;
 use Illuminate\Http\Request;
 
-class PostController extends Controller
+class ApiPostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,7 +25,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-       
+        //
     }
 
     /**
@@ -39,7 +38,6 @@ class PostController extends Controller
     {
         return $post;
     }
-
     /**
      * Update the specified resource in storage.
      *
